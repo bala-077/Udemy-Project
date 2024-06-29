@@ -1,0 +1,161 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+:root {
+    --textcolor: #050C9C;
+    --bgcolor: #D8EFD3;
+
+}
+
+body {
+    font-family: "Nunito", sans-serif;
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+.navbar {
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid black;
+    gap: 10px;
+}
+
+.navbar__s2 {
+    border: 1px solid black;
+    padding: 10px;
+    border-radius: 30px;
+    width: 60%;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.navbar__s2 input {
+    width: 100%;
+    font-size: 16px;
+    background: none;
+    border: none;
+    outline: none;
+}
+
+.navbar__s3 {
+    display: flex;
+    justify-content: space-around;
+    gap: 10px;
+    align-items: center;
+}
+
+.categories {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 10px;
+    border-bottom: 1px solid black;
+}
+
+.categories p {
+    background-color: var(--bgcolor);
+    color: #1A2130;
+    padding: 10px 15px;
+    border-radius: 30px;
+    font-weight: 700;
+}
+
+.saleimg img {
+    width: 100%;
+}
+
+.recommended {
+    padding: 10px;
+}
+
+.recommended__container {
+    display: flex;
+    height: 100%;
+    flex-wrap: wrap;
+    margin-top: 20px;
+    justify-content: space-around;
+}
+
+.course-card {
+    width: 300px;
+    height: 350px;
+}
+
+.course-card img {
+    width: 250px;
+    border-radius: 10px;
+    height: 200px;
+}
+
+.course-card img:hover {
+    transform: translateY(-10px);
+    transition: all 0.3s linear;
+}
+
+.topics {
+    padding: 10px;
+}
+
+.topic-container {
+    display: flex;
+    margin-top: 10px;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.topic-container p {
+    border: 1px solid black;
+    padding: 10px;
+    border-radius: 10px;
+    flex-basis: 25%;
+    flex-grow: 1;
+}
+
+.popular {
+    padding: 10px;
+}
+
+.popular-container {
+    flex-wrap: wrap;
+    text-align: center;
+    margin-top: 20px;
+    width: 100%;
+    justify-content: space-around;
+}
+
+.popular-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+
+.footer {
+    padding: 30px;
+    background-color: #1A2130;
+    color: #fff;
+}
+
+.footer-one {
+    display: flex;
+    gap: 10px;
+}
+
+.footer-one p {
+    margin: 20px;
+}
+
+.footer-two {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer-two h1 {
+    margin: 20px;
+}
