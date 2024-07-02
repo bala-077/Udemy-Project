@@ -21,6 +21,7 @@ body {
     padding: 10px;
     display: flex;
     justify-content: space-between;
+    align-items: center;
     border-bottom: 1px solid black;
     gap: 10px;
 }
@@ -50,6 +51,13 @@ body {
     align-items: center;
 }
 
+.navbar__s4{
+    display: none;
+}
+.navbar__s4 img{
+    height: 30px;
+    width: 30px;
+}
 .categories {
     display: flex;
     justify-content: space-evenly;
@@ -67,6 +75,7 @@ body {
 
 .saleimg img {
     width: 100%;
+    flex-wrap: nowrap;
 }
 
 .recommended {
@@ -82,13 +91,15 @@ body {
 }
 
 .course-card {
-    width: 300px;
-    height: 350px;
+    /* width: 300px; */
+    /* height: 350px; */
+    margin: 5px;
+    flex-basis: 20%;
 }
 
 .course-card img {
     width: 250px;
-    border-radius: 10px;
+    border-radius: 20px;
     height: 200px;
 }
 
@@ -158,4 +169,23 @@ body {
 
 .footer-two h1 {
     margin: 20px;
+}
+@media screen and (max-width:700px) {
+    body{
+        font-size: 14px;
+    }
+    .categories{
+        display: none;
+    }
+    .navbar__s2,.navbar__s3{
+        display: none;
+    }
+    .navbar__s4{
+        display: block;
+    }
+    .course-card{
+        margin: none;
+        flex-basis: 40%;
+    }
+    
 }
